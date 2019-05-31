@@ -1,3 +1,259 @@
-img{
-    margin: 0%;
+$text-color:#454545;
+$backcolor1:#575757;
+$font-size-sm:14px;
+$font-size-reg:16px;
+$fon-size-lg:24px;
+
+$key-color1: #9aaf24;
+$key-color2:#c9e23f;
+
+* {
+    box-sizing: border-box;
+    color: $text-color;
+}
+body{
+    font-family: sans-serif;
+}
+
+#container{
+    width: 1080px;
+    margin: 0 auto;
+    .now{
+        color:$key-color1;
+        pointer-events: none;
+    }
+header{
+    h1{
+        text-align: left;
+        width: 208px;
+        height:31pxpx;
+        margin-top:35px;
+    }
+}
+
+.section-title{
+    display:inline-block;
+    font-size: $fon-size-lg;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 700;
+    padding-top:8px;
+    // padding-bottom: 40px;
+    text-align: center;
+    background:url(../img/titlebar.png)no-repeat left top;
+    background-size: 40px 3px;
+    
+}
+
+#main-visual{
+    position: relative;
+    margin: 36px 0;
+    .catchcopy{
+        width: 250px;
+        height: 100px;
+        position: absolute;
+        top: 50px;
+        right: 100px;
+    }
+}
+
+#global-menu{
+    .global-menu-list{
+        display: flex;
+        justify-content:space-between;
+
+    }
+    .global-menu-list-item{
+        width: 180px;
+        height: 25px;
+        border-left: 2px solid $backcolor1;
+        margin-bottom:56px;
+        &:last-child{
+            border-right:2px solid $backcolor1;
+        }
+        a{
+        display: block  ;
+        height:25px;
+        line-height:25px;
+        text-align: center;
+        text-decoration:none;
+        font-family:'Montserrat',sans-serif;
+        &:hover{
+        background-color:#fafafa;
+        color:$key-color1;
+        }
+    }
+    }
+}
+
+    .news-area{
+        text-align: center;
+        background-color: #fafafa;
+        border:1px solid #eee;
+        margin-bottom: px;
+        padding:70px 0 80px;
+        span{
+            font-family: 'Monserrat',sans-serif;
+
+            position: absolute;
+            width: 130px;
+            // height: 28px;
+            padding: 9px;
+            background-color: #333333;
+            color:#ffffff;
+            // margin-right: 40px;
+            text-align: center;
+            display: inline-block;
+        }
+        .news-list{
+            padding:40px 0 0;
+            margin: 0 auto ;
+            width: 720px;
+            .news-list-item{
+                margin: 0 auto 24px;
+                display: flex;
+                text-align: left;
+
+                a{
+                    display: block;
+                    margin-left:170px ;
+                    width: 542px;
+                    line-height: 28px;
+                    text-decoration-color: #c3c3c3;
+                    // border-bottom: 1px solid #c3c3c3;
+                }
+
+            }
+        }
+    }
+
+
+    .features-area{
+        text-align: center;
+        padding:124px 0 124px;
+        .features-content{
+            padding-top:40px;
+            display: flex;
+            .features-image{
+                width: 360px;
+                height: 290px;
+            }
+            .features-text{
+                text-align: left;
+                margin-left: 56px;
+                line-height: 1.6;
+                h3{
+                    font-size:24px;
+                    font-weight: bold;
+                    margin-bottom:40px;
+                }
+                .features-description{
+                    font-size: $font-size-reg;
+                    &:last-child{
+                        margin-top:21px;
+                    }
+                }
+            }
+        }
+    }
+
+    .subscription-area{
+        text-align: center;
+        padding-bottom: 124px;
+        .subscription-title-text{
+            width: 720px;
+            text-align: left;
+            padding:48px 0 62px;
+            margin: 0 auto;
+        }
+        .subscription-list{
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+
+            .subscription-list-item{
+                width: 344px;
+                border: 4px solid $key-color2;
+                box-shadow: 0px 0px 10px rgba(200,200,200,1);
+                transition: 0.3s;
+                &:hover{
+                    transform: translateY(-4px);
+                    .btn{
+                        background: rgb(201,226,64);
+                        background: linear-gradient(90deg, rgba(201,226,64,1) 0%, rgba(141,226,136,1) 50%, rgba(72,227,219,1) 100%);
+                    }
+
+                    }
+
+                a{
+                    display: block;
+                    text-decoration: none;
+                    
+
+                }
+                img{
+                    width: 100%;
+                }
+                .subscription-description{
+
+                    padding:34px 0 20px;
+                    margin: 0 auto;
+                    text-align: center;
+                h3{
+                    font-family: 'Montserrat',sans-serif;
+                    font-weight: 700;
+                    font-size:22px;
+                }
+                p{
+                    font-family: 'Montserrat',sans-serif;
+                    font-weight: normal;
+                    font-size:40px;
+                    margin:23px 0 37px;
+                    }
+                    p+p{
+                    font-size:$font-size-sm;
+                    }
+                    span{
+                    font-size:32px;
+                    }
+                    .btn{
+                        font-weight: bold;  
+                        display: inline-block;
+                        background-color: #eee;
+                        width:296px;
+                        height:50px;
+                        line-height: 50px;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .item-area{
+        text-align: center;
+        margin-bottom:460px;
+
+        .item-list{
+            padding-top:72px;
+            display: flex;
+            flex-wrap: wrap;
+            .item-list-item{
+                img{
+                    vertical-align: middle;
+                }
+                &:hover{
+                    opacity: 0.7;
+                }
+
+            }
+
+        }
+    }
+    
+    footer{
+        font-family: 'Monserrats',sans-serif;
+        font-weight:normal;
+        text-align: center;
+        font-size: $font-size-sm;
+    }
 }

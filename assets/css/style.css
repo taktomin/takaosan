@@ -1,3 +1,283 @@
-img {
-  margin: 0%;
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #454545;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+#container {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+#container .now {
+  color: #9aaf24;
+  pointer-events: none;
+}
+
+#container header h1 {
+  text-align: left;
+  width: 208px;
+  height: 31pxpx;
+  margin-top: 35px;
+}
+
+#container .section-title {
+  display: inline-block;
+  font-size: 24px;
+  font-family: "Montserrat",sans-serif;
+  font-weight: 700;
+  padding-top: 8px;
+  text-align: center;
+  background: url(../img/titlebar.png) no-repeat left top;
+  background-size: 40px 3px;
+}
+
+#container #main-visual {
+  position: relative;
+  margin: 36px 0;
+}
+
+#container #main-visual .catchcopy {
+  width: 250px;
+  height: 100px;
+  position: absolute;
+  top: 50px;
+  right: 100px;
+}
+
+#container #global-menu .global-menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+#container #global-menu .global-menu-list-item {
+  width: 180px;
+  height: 25px;
+  border-left: 2px solid #575757;
+  margin-bottom: 56px;
+}
+
+#container #global-menu .global-menu-list-item:last-child {
+  border-right: 2px solid #575757;
+}
+
+#container #global-menu .global-menu-list-item a {
+  display: block;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Montserrat',sans-serif;
+}
+
+#container #global-menu .global-menu-list-item a:hover {
+  background-color: #fafafa;
+  color: #9aaf24;
+}
+
+#container .news-area {
+  text-align: center;
+  background-color: #fafafa;
+  border: 1px solid #eee;
+  margin-bottom: px;
+  padding: 70px 0 80px;
+}
+
+#container .news-area span {
+  font-family: 'Monserrat',sans-serif;
+  position: absolute;
+  width: 130px;
+  padding: 9px;
+  background-color: #333333;
+  color: #ffffff;
+  text-align: center;
+  display: inline-block;
+}
+
+#container .news-area .news-list {
+  padding: 40px 0 0;
+  margin: 0 auto;
+  width: 720px;
+}
+
+#container .news-area .news-list .news-list-item {
+  margin: 0 auto 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+}
+
+#container .news-area .news-list .news-list-item a {
+  display: block;
+  margin-left: 170px;
+  width: 542px;
+  line-height: 28px;
+  -webkit-text-decoration-color: #c3c3c3;
+  text-decoration-color: #c3c3c3;
+}
+
+#container .features-area {
+  text-align: center;
+  padding: 124px 0 124px;
+}
+
+#container .features-area .features-content {
+  padding-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#container .features-area .features-content .features-image {
+  width: 360px;
+  height: 290px;
+}
+
+#container .features-area .features-content .features-text {
+  text-align: left;
+  margin-left: 56px;
+  line-height: 1.6;
+}
+
+#container .features-area .features-content .features-text h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+#container .features-area .features-content .features-text .features-description {
+  font-size: 16px;
+}
+
+#container .features-area .features-content .features-text .features-description:last-child {
+  margin-top: 21px;
+}
+
+#container .subscription-area {
+  text-align: center;
+  padding-bottom: 124px;
+}
+
+#container .subscription-area .subscription-title-text {
+  width: 720px;
+  text-align: left;
+  padding: 48px 0 62px;
+  margin: 0 auto;
+}
+
+#container .subscription-area .subscription-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  text-align: center;
+}
+
+#container .subscription-area .subscription-list .subscription-list-item {
+  width: 344px;
+  border: 4px solid #c9e23f;
+  -webkit-box-shadow: 0px 0px 10px #c8c8c8;
+  box-shadow: 0px 0px 10px #c8c8c8;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#container .subscription-area .subscription-list .subscription-list-item:hover {
+  -webkit-transform: translateY(-4px);
+  -ms-transform: translateY(-4px);
+  transform: translateY(-4px);
+}
+
+#container .subscription-area .subscription-list .subscription-list-item:hover .btn {
+  background: #c9e240;
+  background: -webkit-gradient(linear, left top, right top, from(#c9e240), color-stop(50%, #8de288), to(#48e3db));
+  background: -webkit-linear-gradient(left, #c9e240 0%, #8de288 50%, #48e3db 100%);
+  background: -o-linear-gradient(left, #c9e240 0%, #8de288 50%, #48e3db 100%);
+  background: linear-gradient(90deg, #c9e240 0%, #8de288 50%, #48e3db 100%);
+}
+
+#container .subscription-area .subscription-list .subscription-list-item a {
+  display: block;
+  text-decoration: none;
+}
+
+#container .subscription-area .subscription-list .subscription-list-item img {
+  width: 100%;
+}
+
+#container .subscription-area .subscription-list .subscription-list-item .subscription-description {
+  padding: 34px 0 20px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#container .subscription-area .subscription-list .subscription-list-item .subscription-description h3 {
+  font-family: 'Montserrat',sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+#container .subscription-area .subscription-list .subscription-list-item .subscription-description p {
+  font-family: 'Montserrat',sans-serif;
+  font-weight: normal;
+  font-size: 40px;
+  margin: 23px 0 37px;
+}
+
+#container .subscription-area .subscription-list .subscription-list-item .subscription-description p + p {
+  font-size: 14px;
+}
+
+#container .subscription-area .subscription-list .subscription-list-item .subscription-description span {
+  font-size: 32px;
+}
+
+#container .subscription-area .subscription-list .subscription-list-item .subscription-description .btn {
+  font-weight: bold;
+  display: inline-block;
+  background-color: #eee;
+  width: 296px;
+  height: 50px;
+  line-height: 50px;
+}
+
+#container .item-area {
+  text-align: center;
+  margin-bottom: 460px;
+}
+
+#container .item-area .item-list {
+  padding-top: 72px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+#container .item-area .item-list .item-list-item img {
+  vertical-align: middle;
+}
+
+#container .item-area .item-list .item-list-item:hover {
+  opacity: 0.7;
+}
+
+#container footer {
+  font-family: 'Monserrats',sans-serif;
+  font-weight: normal;
+  text-align: center;
+  font-size: 14px;
 }
